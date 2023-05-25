@@ -2,15 +2,14 @@ package org.example;
 
 
 import java.util.Arrays;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 
         // TODO: Esta lista la vas a construir con el input del usuario desde la ventana
-        List<String> playerNames = Arrays.asList("Adan", "German", "Ivan", "Oscar", "Poonam");
+        String[] playerNames = {"Adan", "German", "Ivan", "Oscar", "Poonam"};
 
-        playerNames.stream()
+        Arrays.stream(playerNames)
                 .map(Runner::new)
                 .map(ThreadRunner::new)
                 .map(Thread::new)
