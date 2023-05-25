@@ -8,6 +8,7 @@ public class ThreadRunner implements Runnable {
         this.runner = runner;
     }
 
+    // TODO: Modifica este metodo para que use el widget para imprimir el mensaje
     @Override
     public void run() {
         try {
